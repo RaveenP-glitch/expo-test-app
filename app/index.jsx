@@ -10,6 +10,7 @@ const Home = () => {
       <Text style={styles.title}>The Number one shelfie app</Text>
       <Button title="Login" onPress={() => router.push('/login')} />
       <Text style={styles.text}>Already have an account? <Link href="/login">Login</Link></Text>
+      <Text style={styles.text}>Don't have an account? <Link href="/signup">Signup</Link></Text>
     </View>
   )
 }
