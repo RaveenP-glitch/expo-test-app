@@ -3,8 +3,11 @@ import React from 'react'
 import { Link } from 'expo-router'
 
 const About = () => {
+  const colorScheme = Colors[colorScheme] ?? Colors.light;
+  console.log(colorScheme);
+  
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { backgroundColor: colorScheme.background }]}>
       <Text style={styles.title}>About Page</Text>
       <Link style={styles.link} href="/">Back to Home</Link>
     </View>
